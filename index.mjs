@@ -1,6 +1,6 @@
 import {EventEmitter}from 'events';
-const emiso = new EventEmitter();
-emiso.on('saludo',(nombre)=>{
-    console.log('!Hola , $(nombre)!');
-});
+const emisor = new EventEmitter();
+emisor.on('saludo',(nombre)=>{
+    console.log('!hola,${nombre}!');
+})
 emisor.emit('saludo','Mundo');
